@@ -5,17 +5,16 @@ const Banner = () => {
             <div
                 className="hero min-h-screen"
                 style={{
-                    backgroundImage: "url(https://static.vecteezy.com/system/resources/thumbnails/009/378/895/small_2x/world-tourism-day-background-free-vector.jpg)",
+                    backgroundImage: "url(https://img.freepik.com/free-photo/top-view-traveler-accessories-wooden-surface_23-2147950771.jpg?t=st=1732224827~exp=1732228427~hmac=7d23923e61015c01c66121312430e60b6348fff7103e0dd7c4e32620f473ad18&w=2000)",
                 }}>
-                <div className="hero-overlay bg-opacity-60"></div>
+                <div className="hero-overlay bg-opacity-40"></div>
                 <div className="hero-content text-neutral-content text-center">
                     <div className="max-w-md">
-                        <h1 className="mb-5 text-5xl font-bold">Hello there</h1>
+                        <h1 className="mb-5 text-white text-5xl font-bold">Hey guys Welcome To Travel Gears Zone</h1>
                         <p className="mb-5">
-                            Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda excepturi exercitationem
-                            quasi. In deleniti eaque aut repudiandae et a id nisi.
+                            This online zone is yours.So take your travel gears and enjoy your tour.Don't worry we are always with you.Be safe and Travel in the world.
                         </p>
-                        <button className="btn btn-primary">Get Started</button>
+                        <button className="btn bg-green-500  hover:bg-green-600  text-white">Get Gears</button>
                     </div>
                 </div>
             </div>
