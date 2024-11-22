@@ -5,9 +5,9 @@ import { Footer } from "../components/share/Footer";
 // MainLayout
 const MainLayout = () => {
     return (
-        <div>
+        <div className=" bg-gray-100">
             <Navbar/>
-            <div >
+            <div className="min-h-screen">
                 <Outlet />
             </div>
             <Footer/>

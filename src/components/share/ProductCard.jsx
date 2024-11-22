@@ -1,23 +1,27 @@
 
-const ProductCard = () => {
+const ProductCard = ({product}) => {
     return (
-        <div className="card bg-base-100 lg:w-96 w-full lg:shadow-xl shadow-lg mb-8">
+        <div className=" border shadow-xl p-4  rounded-lg">
             <figure>
                 <img
-                    src="https://img.freepik.com/free-photo/travel-still-life-collection_23-2148837283.jpg?t=st=1732225448~exp=1732229048~hmac=584ae945fdb2bc13dcb7fea9a00b9bde1c15567ac5eb33c0dbf9235cfcbd8cf5&w=1800"
-                    alt="Beg" />
+                    className="w-full h-[250px] rounded-t-lg object-cover"
+                    src={product?.imageURL}
+                    alt="Product image" />
             </figure>
-            <div className="card-body">
-                <h2 className="card-title">
-                    Monitor
-                    <div className="badge badge-secondary">NEW</div>
-                </h2>
-                <p>This monitor is gaming based.If you like game then you must buy that.</p>
-                <div className="card-actions justify-end">
-                    <div className="badge badge-outline">Mac</div>
-                    <div className="badge badge-outline">Products</div>
-                </div>
+            <div className="">
+                <p className="lg:text-[14px] mt-4">{ product?.category}</p>
+                <p className="lg:text-[22px] font-bold">{product?.title }</p>
+             
+                <p className="text-gray-500 text-[16px]">
+                    {product?.description.length < 80 ? `${product?.description}` : `${product.description.slice(0, 50)}...`}</p>
+               
             </div>
+            <div className="flex justify-between text-[14px] mt-2 mb-3">
+                <p><span className="font-semibold">Brand: </span>{product?.brand}</p>
+                <p><span className="font-semibold">Stock: </span>{product?.stock}</p>
+                <p><span className="font-semibold">Price: </span>{product?.price}</p>
+            </div>
+            <button className="btn w-full py-2 bg-gray-300 text-black">Add to wishlist</button>
         </div>
     );
 };

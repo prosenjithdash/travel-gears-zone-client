@@ -1,0 +1,212 @@
+[
+  {
+    "title": "Hiking Backpack",
+    "brand": "AdventurePro",
+    "stock": 20,
+    "category": "Backpacks",
+    "price": 1500,
+    "imageURL": "https://m.media-amazon.com/images/I/81WhfropRnL._AC_UY350_.jpg",
+    "description": "Durable and lightweight hiking backpack with multiple compartments and water resistance.",
+    "sellerEmail": "prosenjith.edu@gmail.com"
+  },
+  {
+    "title": "Lightweight Travel Backpack",
+    "brand": "WanderLite",
+    "stock": 25,
+    "category": "Backpacks",
+    "price": 1800,
+    "imageURL": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSV6LyRxk5wFbaiGnh-m6BRllWyudUMKe30aQ&s",
+    "description": "Compact travel backpack ideal for day trips and urban explorations.",
+    "sellerEmail": "prosenjith.edu@gmail.com"
+  },
+  {
+    "title": "Multi-Purpose Backpack",
+    "brand": "GearPack",
+    "stock": 15,
+    "category": "Backpacks",
+    "price": 2000,
+    "imageURL": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT4wjZtyyg4nG_UOPzao5yZ0eetK9Ea-Pq8WQ&s",
+    "description": "Spacious multi-purpose backpack suitable for hiking, travel, and daily use.",
+    "sellerEmail": "prosenjith.edu@gmail.com"
+  },
+  {
+    "title": "Sleeping Bag",
+    "brand": "CampEase",
+    "stock": 15,
+    "category": "Camping Gear",
+    "price": 1500,
+    "imageURL": "https://5.imimg.com/data5/SELLER/Default/2024/2/382806445/LF/CW/IV/2852424/trimm-highlander-sleeping-bag-mid-blue.jpg",
+    "description": "All-weather sleeping bag designed for comfort and warmth in any condition.",
+    "sellerEmail": "prosenjith.edu@gmail.com"
+  },
+  {
+    "title": "Portable Tent",
+    "brand": "Outlander",
+    "stock": 10,
+    "category": "Camping Gear",
+    "price": 2500,
+    "imageURL": "https://down-my.img.susercontent.com/file/my-11134207-7r98w-lx1uh4zap01684",
+    "description": "Quick-setup portable tent with UV protection and waterproof material.",
+    "sellerEmail": "prosenjith.edu@gmail.com"
+  },
+  {
+    "title": "Camping Chair",
+    "brand": "RelaxCamp",
+    "stock": 20,
+    "category": "Camping Gear",
+    "price": 1800,
+    "imageURL": "https://m.media-amazon.com/images/I/51xkkjy+NXL.jpg",
+    "description": "Foldable camping chair with a sturdy frame and padded seating.",
+    "sellerEmail": "prosenjith.edu@gmail.com"
+  },
+  {
+    "title": "Travel Water Bottle",
+    "brand": "HydroPack",
+    "stock": 50,
+    "category": "Accessories",
+    "price": 1500,
+    "imageURL": "https://m.media-amazon.com/images/I/71+dDBe+xTL._AC_UF894,1000_QL80_.jpg",
+    "description": "Insulated water bottle to keep your drinks hot or cold for hours.",
+    "sellerEmail": "prosenjith.edu@gmail.com"
+  },
+  {
+    "title": "Travel Pillow",
+    "brand": "ComfortZone",
+    "stock": 35,
+    "category": "Accessories",
+    "price": 1700,
+    "imageURL": "https://5.imimg.com/data5/SELLER/Default/2023/11/359464292/PA/MT/UK/12027497/black-with-mask-500x500.jpg",
+    "description": "Ergonomic travel pillow for neck support and comfortable naps during journeys.",
+    "sellerEmail": "prosenjith.edu@gmail.com"
+  },
+  {
+    "title": "Power Bank",
+    "brand": "ChargeUp",
+    "stock": 45,
+    "category": "Accessories",
+    "price": 2000,
+    "imageURL": "https://www.jbhifi.co.nz/cdn/shop/products/431806-Product-0-I-638321452208112307_grande.jpg",
+    "description": "High-capacity power bank with fast charging capability and multiple ports.",
+    "sellerEmail": "prosenjith.edu@gmail.com"
+  },
+  {
+    "title": "Hiking Boots",
+    "brand": "TrailMaster",
+    "stock": 18,
+    "category": "Footwear",
+    "price": 2200,
+    "imageURL": "https://backwoods.co.nz/image/cache/catalog/trekking%20and%20hiking/Boots/hikeup%2017/Aliexpress_MainImage_3-1000x1000.jpg.webp",
+    "description": "Sturdy and comfortable hiking boots designed for rough terrains.",
+    "sellerEmail": "prosenjith.edu@gmail.com"
+  },
+  {
+    "title": "Travel Sandals",
+    "brand": "StepOut",
+    "stock": 25,
+    "category": "Footwear",
+    "price": 1500,
+    "imageURL": "https://sandinmysuitcase.com/wp-content/uploads/2024/04/ECCO-Flowt-2-Band.jpg",
+    "description": "Lightweight and durable travel sandals with excellent grip.",
+    "sellerEmail": "prosenjith.edu@gmail.com"
+  },
+  {
+    "title": "Trekking Shoes",
+    "brand": "MountainStride",
+    "stock": 12,
+    "category": "Footwear",
+    "price": 3000,
+    "imageURL": "https://cdn.shopify.com/s/files/1/0252/9735/4833/files/woman-wearing-hiking-boots-on-rock.jpg?v=1669852983",
+    "description": "Premium trekking shoes with superior comfort and waterproof design.",
+    "sellerEmail": "prosenjith.edu@gmail.com"
+  },
+  {
+    "title": "Universal Travel Adapter",
+    "brand": "GlobePlug",
+    "stock": 50,
+    "category": "Electronics",
+    "price": 1600,
+    "imageURL": "https://www.brandhk.com/productfiles/f12130-brandhk-express-globepl.jpg",
+    "description": "Universal travel adapter compatible with plugs from around the world.",
+    "sellerEmail": "prosenjith.edu@gmail.com"
+  },
+  {
+    "title": "Portable Flashlight",
+    "brand": "BrightPath",
+    "stock": 28,
+    "category": "Electronics",
+    "price": 1500,
+    "imageURL": "https://m.media-amazon.com/images/I/71o-ocIQymL.jpg",
+    "description": "LED flashlight with long battery life and adjustable brightness.",
+    "sellerEmail": "prosenjith.edu@gmail.com"
+  },
+  {
+    "title": "Noise-Canceling Headphones",
+    "brand": "SoundEscape",
+    "stock": 20,
+    "category": "Electronics",
+    "price": 2500,
+    "imageURL": "https://m.media-amazon.com/images/I/71M6qp6PpuL._AC_UF1000,1000_QL80_.jpg",
+    "description": "Noise-canceling headphones for uninterrupted music and calls during travel.",
+    "sellerEmail": "prosenjith.edu@gmail.com"
+  },
+  {
+    "title": "Camping Stove",
+    "brand": "HeatMate",
+    "stock": 18,
+    "category": "Camping Gear",
+    "price": 3000,
+    "imageURL": "https://i5.walmartimages.com/asr/3c14d1cf-2275-4f03-a633-245fe9ea5eed_1.450d6eae5ad19482a123f16b15a73054.jpeg?odnHeight=2000&odnWidth=2000&odnBg=FFFFFF",
+    "description": "Compact camping stove with fast ignition and adjustable heat.",
+    "sellerEmail": "prosenjith.edu@gmail.com"
+  },
+  {
+    "title": "First Aid Kit",
+    "brand": "SafeTrip",
+    "stock": 30,
+    "category": "Accessories",
+    "price": 1500,
+    "imageURL": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSeJlHSp7rExqe4aI-LEc9RTApaVpWIFJo2sTyyL2va7OsMkSxhK6Pmh8zultVmrV3i-oc&usqp=CAU",
+    "description": "Comprehensive first aid kit for emergencies during your travels.",
+    "sellerEmail": "prosenjith.edu@gmail.com"
+  },
+  {
+    "title": "Travel Organizer",
+    "brand": "PackSmart",
+    "stock": 40,
+    "category": "Accessories",
+    "price": 1800,
+    "imageURL": "https://m.media-amazon.com/images/I/71yhXj9UpWL._AC_UY1000_.jpg",
+    "description": "Portable organizer for keeping your documents and essentials in order.",
+    "sellerEmail": "prosenjith.edu@gmail.com"
+  },
+  {
+    "title": "Binoculars",
+    "brand": "ZoomX",
+    "stock": 15,
+    "category": "Electronics",
+    "price": 2500,
+    "imageURL": "https://m.media-amazon.com/images/I/81H79UG8UIL.jpg",
+    "description": "High-quality binoculars with 10x zoom and crystal-clear optics.",
+    "sellerEmail": "prosenjith.edu@gmail.com"
+  },
+  {
+    "title": "Dry Bag",
+    "brand": "AquaSeal",
+    "stock": 20,
+    "category": "Accessories",
+    "price": 1700,
+    "imageURL": "https://m.media-amazon.com/images/I/513ocr0tjcL._AC_UY1000_.jpg",
+    "description": "Waterproof dry bag for protecting your gear during water adventures.",
+    "sellerEmail": "prosenjith.edu@gmail.com"
+  },
+  {
+    "title": "Camping Lantern",
+    "brand": "BrightCamp",
+    "stock": 25,
+    "category": "Camping Gear",
+    "price": 2000,
+    "imageURL": "https://m.media-amazon.com/images/I/81xwHA8GRvS._AC_UF1000,1000_QL80_.jpg",
+    "description": "Rechargeable camping lantern with multiple brightness settings.",
+    "sellerEmail": "prosenjith.edu@gmail.com"
+  }
+]
