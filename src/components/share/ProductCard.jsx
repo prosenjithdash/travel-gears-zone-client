@@ -13,7 +13,7 @@ const ProductCard = ({product}) => {
                 <p className="lg:text-[22px] font-bold">{product?.title }</p>
              
                 <p className="text-gray-500 text-[16px]">
-                    {product?.description.length < 80 ? `${product?.description}` : `${product.description.slice(0, 50)}...`}</p>
+                    {product?.description?.length < 80 ? `${product?.description}` : `${product?.description?.slice(0, 50)}...`}</p>
                
             </div>
             <div className="flex justify-between text-[14px] mt-2 mb-3">
