@@ -1,7 +1,11 @@
 import { Link, NavLink } from "react-router-dom";
+import useAuth from "../../hooks/useAuth";
+import UserDropdown from "./UserDropdown";
 
 // Navbar Component
 const Navbar = () => {
+    const { user } = useAuth();
+    console.log('Check user:',user)
     return (
         <div>
             <div className="navbar bg-base-100">
@@ -57,11 +61,11 @@ const Navbar = () => {
                     </ul>
                 </div>
                 {
-                    // user ? (
-                    //     <div className="navbar-end">
-                    //         <UserDropdown />
-                    //     </div>
-                    // ) :
+                    user ? (
+                        <div className="navbar-end">
+                            <UserDropdown />
+                        </div>
+                    ) :
                         <div className="navbar-end">
                             <div className="flex gap-2 items-center ">
                                 <Link to='/login'>
