@@ -22,6 +22,9 @@ const Products = () => {
     // useState for Sort project
     const [category, setCategory] = useState('');
 
+    const [uniqueBrand, setUniqueBrand] = useState([]);
+    const [uniqueCategory, setUniqueCategory] = useState([]);
+
     console.log('Search Product : ' + search)
     console.log('Sort Product : ' + sort)
     console.log('Brand Product : ' + brand)
@@ -31,9 +34,13 @@ const Products = () => {
         setLoading(true)
         const fetch = async () => {
             axios.get(`http://localhost:8000/all-products?title=${search}&sort=${sort}&brand=${brand}&category=${category}`).then(res => {
-                setProducts(res.data)
+
+                setProducts(res.data.products);
+                setUniqueBrand(res.data.brands);
+                setUniqueCategory(res.data.categories);
+
                 setLoading(false)
-                //    console.log(res.data)
+                   console.log(res.data)
             })
         }
         fetch();
@@ -76,7 +83,13 @@ const Products = () => {
             <div className="lg:grid lg:grid-cols-12 gap-2">
 
                 <div className="col-span-2">
-                    <FilterBar setBrand={setBrand} setCategory={setCategory} handleReset={handleReset} />
+                    <FilterBar
+                        setBrand={setBrand}
+                        setCategory={setCategory}
+                        handleReset={handleReset}
+                        uniqueBrand={uniqueBrand}
+                        uniqueCategory={uniqueCategory}
+                    />
                 </div>
                 
                 {/* Showing Result  */}
