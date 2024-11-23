@@ -2,7 +2,7 @@
 const Review = () => {
     return (
         <div>
-            <div className="card bg-base-200 text-black lg:w-96 w-full mb-8">
+            <div className="card bg-white text-black lg:w-96 w-full mb-8">
                 <div className="card-body ">
                     <h2 className="card-title">Bilas Saha</h2>
                     <p>I bought two travel beg. Mode is TB898. Honestly i said beg quality is to much good.Anyone search better quality beg then buy that.</p>
