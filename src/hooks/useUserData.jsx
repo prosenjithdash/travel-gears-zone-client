@@ -10,7 +10,7 @@ const useUserData = () => {
     useEffect(() => {
         const fetchUserData = async () => {
 
-            const res = await axios.get(`http://localhost:8000/user/${user.email}`)
+            const res = await axios.get(`https://travel-gears-zone-server.vercel.app/user/${user.email}`)
             SetUserData(res.data)
 
         };

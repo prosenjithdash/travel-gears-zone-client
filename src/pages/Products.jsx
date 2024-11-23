@@ -44,7 +44,7 @@ const Products = () => {
     useEffect(() => {
         setLoading(true)
         const fetch = async () => {
-            axios.get(`http://localhost:8000/all-products?title=${search}&page=${page}&limit=9&sort=${sort}&brand=${brand}&category=${category}`).then(res => {
+            axios.get(`https://travel-gears-zone-server.vercel.app/all-products?title=${search}&page=${page}&limit=9&sort=${sort}&brand=${brand}&category=${category}`).then(res => {
 
                 setProducts(res.data.products);
                 setUniqueBrand(res.data.brands);
@@ -52,7 +52,7 @@ const Products = () => {
                 setTotalPages(Math.ceil(res.data.totalProducts / 9))
 
                 setLoading(false)
-                   console.log(res.data)
+                console.log(res.data)
             })
         }
         fetch();
@@ -76,13 +76,13 @@ const Products = () => {
     }
 
     const handlePageChange = (newPage) => {
-        if (newPage > 0 && newPage <= totalPages){
+        if (newPage > 0 && newPage <= totalPages) {
             setPage(newPage)
-            window.scrollTo({top:0, behavior:'smooth'})
+            window.scrollTo({ top: 0, behavior: 'smooth' })
         }
-        
+
     }
-    
+
 
 
     return (
@@ -93,9 +93,9 @@ const Products = () => {
             {/* Searching and Sorting */}
             <div className="lg:flex justify-between items-center w-full mb-6">
 
-                <SearchBar handleSearch={handleSearch}/>
-                <SortByPrice setSort={setSort}/>
-                
+                <SearchBar handleSearch={handleSearch} />
+                <SortByPrice setSort={setSort} />
+
             </div>
 
             {/* Content */}
@@ -110,36 +110,36 @@ const Products = () => {
                         uniqueCategory={uniqueCategory}
                     />
                 </div>
-                
+
                 {/* Showing Result  */}
                 <div className="col-span-10">
 
                     {
                         loading ? (
-                            <Loading/>
+                            <Loading />
                         ) : (
-                                <>
-                                    {
-                                        products.length === 0 ?
-                                            <div className="w-full h-full flex items-center justify-center">
-                                                <h1 className="text-3xl font-bold">No Products Found.</h1>
-                                           
-                                            </div> :
-                                            <div className="min-h-screen lg:grid lg:grid-cols-3 gap-2 ">
+                            <>
+                                {
+                                    products.length === 0 ?
+                                        <div className="w-full h-full flex items-center justify-center">
+                                            <h1 className="text-3xl font-bold">No Products Found.</h1>
 
-                                                {
-                                                    products.map(product => (<ProductCard key={product._id} product={product}/> ))
-                                                }
+                                        </div> :
+                                        <div className="min-h-screen lg:grid lg:grid-cols-3 gap-2 ">
 
-                                            </div>
-                                    }
-                                </>
+                                            {
+                                                products.map(product => (<ProductCard key={product._id} product={product} />))
+                                            }
+
+                                        </div>
+                                }
+                            </>
                         )
                     }
 
                     {/* Pagination */}
                     <div className="flex justify-center items-center gap-2 my-8">
-                        <button className="btn p-4 border  border-solid  border-black rounded-[90px]" onClick={() => handlePageChange(page-1)} disabled={page === 1}>
+                        <button className="btn p-4 border  border-solid  border-black rounded-[90px]" onClick={() => handlePageChange(page - 1)} disabled={page === 1}>
                             <FaCircleArrowLeft />
 
 
@@ -153,9 +153,9 @@ const Products = () => {
                         </button>
                     </div>
 
-                    
+
                 </div>
-               
+
 
             </div>
 

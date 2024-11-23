@@ -44,7 +44,7 @@ const AuthProvider = ({ children }) => {
         const unsubscribe = onAuthStateChanged(auth, currentUser => {
             setUser(currentUser);
             if (currentUser) {
-                axios.post(`http://localhost:8000/authentication`, { email: currentUser.email }).then(data => {
+                axios.post(`https://travel-gears-zone-server.vercel.app/authentication`, { email: currentUser.email }).then(data => {
                     if (data.data) {
                         localStorage.setItem('access-token', data?.data?.token)
                         setLoading(false)

@@ -30,7 +30,7 @@ const AddProducts = () => {
         const token = localStorage.getItem("access-token")
         console.log(token)
 
-        axios.post("http://localhost:8000/add-products", product, {
+        axios.post("https://travel-gears-zone-server.vercel.app/add-products", product, {
             headers: {
                 authorization: `Bearer ${token}`,
             }
