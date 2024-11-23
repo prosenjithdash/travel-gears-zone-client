@@ -1,5 +1,26 @@
+import axios from "axios";
+import useUserData from "../../hooks/useUserData";
+import Swal from "sweetalert2";
 
-const ProductCard = ({product}) => {
+const ProductCard = ({ product }) => {
+    const userData = useUserData();
+    const userEmail = userData.email;
+    // console.log(userEmail)
+
+    const handleWishlist = async() => {
+        await axios.patch("http://localhost:8000/wishlist/add", { userEmail: userEmail, productId: product._id }).then((res) => {
+            if (res.data.modifiedCount) {
+                Swal.fire({
+                    position: "center",
+                    icon: "success",
+                    title: "Product added to your wishlist.",
+                    showConfirmButton: false,
+                    timer: 1500
+                });
+           }
+        })
+            
+    }
     return (
         <div className=" border shadow-xl p-4  rounded-lg">
             <figure>
@@ -21,7 +42,7 @@ const ProductCard = ({product}) => {
                 <p><span className="font-semibold">Stock: </span>{product?.stock}</p>
                 <p><span className="font-semibold">Price: </span>{product?.price}</p>
             </div>
-            <button className="btn w-full py-2 bg-gray-300 text-black">Add to wishlist</button>
+            <button onClick={handleWishlist} className="btn w-full py-2 bg-gray-300 text-black">Add to wishlist</button>
         </div>
     );
 };
