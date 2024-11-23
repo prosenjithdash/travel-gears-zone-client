@@ -5,6 +5,7 @@ import { SortByPrice } from "../components/share/SortByPrice";
 import axios from "axios";
 import Loading from "./Loading";
 import ProductCard from "../components/share/ProductCard";
+import { FaCircleArrowLeft, FaCircleArrowRight } from "react-icons/fa6";
 
 const Products = () => {
     const [products, setProducts] = useState([]);
@@ -22,8 +23,18 @@ const Products = () => {
     // useState for Sort project
     const [category, setCategory] = useState('');
 
+
     const [uniqueBrand, setUniqueBrand] = useState([]);
     const [uniqueCategory, setUniqueCategory] = useState([]);
+
+
+    // useState for pagination project
+    const [page, setPage] = useState(1);
+
+
+    // useState for pagination project
+    const [totalPages, setTotalPages] = useState(1);
+
 
     console.log('Search Product : ' + search)
     console.log('Sort Product : ' + sort)
@@ -33,18 +44,19 @@ const Products = () => {
     useEffect(() => {
         setLoading(true)
         const fetch = async () => {
-            axios.get(`http://localhost:8000/all-products?title=${search}&sort=${sort}&brand=${brand}&category=${category}`).then(res => {
+            axios.get(`http://localhost:8000/all-products?title=${search}&page=${page}&limit=9&sort=${sort}&brand=${brand}&category=${category}`).then(res => {
 
                 setProducts(res.data.products);
                 setUniqueBrand(res.data.brands);
                 setUniqueCategory(res.data.categories);
+                setTotalPages(Math.ceil(res.data.totalProducts / 9))
 
                 setLoading(false)
                    console.log(res.data)
             })
         }
         fetch();
-    }, [search, sort, brand, category]);
+    }, [search, sort, brand, category, page]);
 
     // Handle Search
     const handleSearch = (e) => {
@@ -63,6 +75,13 @@ const Products = () => {
         window.location.reload()
     }
 
+    const handlePageChange = (newPage) => {
+        if (newPage > 0 && newPage <= totalPages){
+            setPage(newPage)
+            window.scrollTo({top:0, behavior:'smooth'})
+        }
+        
+    }
     
 
 
@@ -118,8 +137,25 @@ const Products = () => {
                         )
                     }
 
+                    {/* Pagination */}
+                    <div className="flex justify-center items-center gap-2 my-8">
+                        <button className="btn p-4 border  border-solid  border-black rounded-[90px]" onClick={() => handlePageChange(page-1)} disabled={page === 1}>
+                            <FaCircleArrowLeft />
+
+
+                        </button>
+                        <p> Page {page} of {totalPages}</p>
+
+                        <button className="border p-2 border-solid  border-black rounded-[90px]" onClick={() => handlePageChange(page + 1)} disabled={page === totalPages}>
+                            <FaCircleArrowRight />
+
+
+                        </button>
+                    </div>
+
                     
                 </div>
+               
 
             </div>
 
